@@ -1,0 +1,123 @@
+.menu {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    z-index: 1;
+  
+    .body {
+      box-sizing: border-box;
+      height: 100%;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 56px;
+        gap: 12px;
+        margin-top: 80px;
+  
+        .header {
+          color: rgb(153, 153, 153);
+          border-bottom: 1px solid rgb(153, 153, 153);
+          text-transform: uppercase;
+          font-size: 11px;
+          margin-bottom: 40px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: rgb(2, 2, 2);
+          font-weight: 300;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 640px) {
+      .body {
+        padding: 20px;
+  
+        .nav {
+          font-size: 24px;
+          margin-top: 20px;
+  
+          .header {
+            font-size: 10px;
+            margin-bottom: 20px;
+          }
+  
+          a {
+            font-size: 24px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  
+    @media screen and (min-width: 641px) and (max-width: 768px) {
+      .body {
+        padding: 30px;
+  
+        .nav {
+          font-size: 30px;
+          margin-top: 30px;
+  
+          .header {
+            font-size: 15px;
+            margin-bottom: 30px;
+          }
+  
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .body {
+        padding: 40px;
+  
+        .nav {
+          font-size: 51px;
+          margin-top: 40px;
+  
+          .header {
+            font-size: 20px;
+            margin-bottom: 40px;
+          }
+  
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  
+    @media screen and (min-width: 1025px) {
+      .body {
+        padding: 100px;
+  
+        .nav {
+          font-size: 56px;
+          margin-top: 80px;
+  
+          .header {
+            font-size: 11px;
+            margin-bottom: 40px;
+          }
+  
+          a {
+            font-size: 300;
+          }
+        }
+      }
+    }
+  }
+  
